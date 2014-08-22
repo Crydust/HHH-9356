@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>be.crydust</groupId>
-    <artifactId>HHH-XXXX</artifactId>
+    <artifactId>HHH-9356</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>HHH-XXXX converter and between</name>
+    <name>HHH-9356 jpa converter only applied to high value of cb.between</name>
 
     <dependencies>
         <dependency>
