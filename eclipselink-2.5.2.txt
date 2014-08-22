@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HHH-XXXX converter and between 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ HHH-XXXX ---
+[INFO] Deleting D:\home\kristof\Projects\HHH-XXXX\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ HHH-XXXX ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ HHH-XXXX ---
+[INFO] Compiling 2 source files to D:\home\kristof\Projects\HHH-XXXX\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ HHH-XXXX ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ HHH-XXXX ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ HHH-XXXX ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\home\kristof\Projects\HHH-XXXX\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ HHH-XXXX ---
+[INFO] Compiling 1 source file to D:\home\kristof\Projects\HHH-XXXX\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ HHH-XXXX ---
+[INFO] Surefire report directory: D:\home\kristof\Projects\HHH-XXXX\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running be.crydust.AmountTest
+*** setUp ***
+[EL Info]: 2014-08-22 18:49:28.895--ServerSession(1344460801)--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
+[EL Info]: connection: 2014-08-22 18:49:29.08--ServerSession(1344460801)--file:/D:/home/kristof/Projects/HHH-XXXX/target/classes/_manager login successful
+[EL Fine]: sql: 2014-08-22 18:49:29.092--ServerSession(1344460801)--Connection(1246856260)--DROP TABLE AMOUNT
+[EL Fine]: sql: 2014-08-22 18:49:29.099--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.108--ServerSession(1344460801)--Connection(1246856260)--DROP TABLE AMOUNT
+[EL Fine]: sql: 2014-08-22 18:49:29.109--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.109--ServerSession(1344460801)--Connection(1246856260)--DROP TABLE AMOUNT
+[EL Fine]: sql: 2014-08-22 18:49:29.109--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.109--ServerSession(1344460801)--Connection(1246856260)--DROP TABLE AMOUNT
+[EL Fine]: sql: 2014-08-22 18:49:29.11--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.11--ServerSession(1344460801)--Connection(1246856260)--DROP TABLE AMOUNT
+[EL Fine]: sql: 2014-08-22 18:49:29.11--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.111--ServerSession(1344460801)--Connection(1246856260)--SELECT SEQ_NAME FROM SEQUENCE WHERE SEQ_NAME <> SEQ_NAME
+[EL Fine]: sql: 2014-08-22 18:49:29.111--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.111--ServerSession(1344460801)--Connection(1246856260)--DELETE FROM SEQUENCE WHERE SEQ_NAME = SEQ_GEN
+[EL Fine]: sql: 2014-08-22 18:49:29.112--ServerSession(1344460801)--SELECT 1
+[EL Warning]: 2014-08-22 18:49:29.112--ServerSession(1344460801)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.h2.jdbc.JdbcSQLException: Table "SEQUENCE" not found; SQL statement:
+DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN' [42102-181]
+Error Code: 42102
+Call: DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+Query: DataModifyQuery(sql="DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'")
+[EL Fine]: sql: 2014-08-22 18:49:29.114--ServerSession(1344460801)--Connection(1246856260)--SELECT ID FROM AMOUNT WHERE ID <> ID
+[EL Fine]: sql: 2014-08-22 18:49:29.114--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.115--ServerSession(1344460801)--Connection(1246856260)--CREATE TABLE AMOUNT (ID BIGINT NOT NULL, cents BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2014-08-22 18:49:29.118--ServerSession(1344460801)--Connection(1246856260)--SELECT SEQ_NAME FROM SEQUENCE WHERE SEQ_NAME <> SEQ_NAME
+[EL Fine]: sql: 2014-08-22 18:49:29.119--ServerSession(1344460801)--SELECT 1
+[EL Fine]: sql: 2014-08-22 18:49:29.119--ServerSession(1344460801)--Connection(1246856260)--CREATE TABLE SEQUENCE (SEQ_NAME VARCHAR(50) NOT NULL, SEQ_COUNT NUMERIC(38), PRIMARY KEY (SEQ_NAME))
+[EL Fine]: sql: 2014-08-22 18:49:29.122--ServerSession(1344460801)--Connection(1246856260)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = SEQ_GEN
+[EL Fine]: sql: 2014-08-22 18:49:29.128--ServerSession(1344460801)--Connection(1246856260)--INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values (SEQ_GEN, 0)
+[EL Fine]: sql: 2014-08-22 18:49:29.167--ClientSession(739998632)--Connection(1246856260)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind => [50, SEQ_GEN]
+[EL Fine]: sql: 2014-08-22 18:49:29.169--ClientSession(739998632)--Connection(1246856260)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind => [SEQ_GEN]
+*** convertToDatabaseColumn 1 dollar = 100 cents ***
+[EL Fine]: sql: 2014-08-22 18:49:29.176--ClientSession(739998632)--Connection(1246856260)--INSERT INTO AMOUNT (ID, cents) VALUES (?, ?)
+	bind => [1, 100]
+*** convertToDatabaseColumn 10 dollar = 1000 cents ***
+[EL Fine]: sql: 2014-08-22 18:49:29.177--ClientSession(739998632)--Connection(1246856260)--INSERT INTO AMOUNT (ID, cents) VALUES (?, ?)
+	bind => [2, 1000]
+*** testCriteriaBetween9And11Is10 ***
+*** convertToDatabaseColumn 9 dollar = 900 cents ***
+*** convertToDatabaseColumn 11 dollar = 1100 cents ***
+[EL Fine]: sql: 2014-08-22 18:49:29.211--ClientSession(739998632)--Connection(1246856260)--SELECT ID, cents FROM AMOUNT WHERE (cents BETWEEN ? AND ?)
+	bind => [900, 1100]
+*** tearDown ***
+[EL Info]: connection: 2014-08-22 18:49:29.217--ServerSession(1344460801)--file:/D:/home/kristof/Projects/HHH-XXXX/target/classes/_manager logout successful
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.736 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.496 s
+[INFO] Finished at: 2014-08-22T18:49:29+01:00
+[INFO] Final Memory: 21M/226M
+[INFO] ------------------------------------------------------------------------
